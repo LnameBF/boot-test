@@ -1,4 +1,4 @@
-package com.example.boottest.controller;
+package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class IndexController {
 
     @PostMapping("/login")
     public String main(String username, String password) {
-        return "index";
+        return "main";
     }
 
 }
