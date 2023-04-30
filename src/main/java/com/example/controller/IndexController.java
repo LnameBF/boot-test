@@ -37,15 +37,10 @@ public class IndexController {
             //回到登录页面
             return "login";
         }
-
     }
 
     @GetMapping("/main.html")
     public String gotoPage(HttpSession session) {
-        if(session.getAttribute("LoginUser")!=null){
-            return "main";
-        }else{
-            return "login";
-        }
+        return "main";
     }
 }
