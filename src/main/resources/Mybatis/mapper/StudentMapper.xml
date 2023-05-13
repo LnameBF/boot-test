@@ -6,4 +6,8 @@
     <select id="getStudent" resultType="com.example.entity.Student">
         select * from student where s_age = #{age}
     </select>
+
+    <select id="updataStudent" resultType="com.example.entity.Student">
+        update
+    </select>
 </mapper>
